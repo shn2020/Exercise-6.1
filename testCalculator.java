@@ -18,5 +18,12 @@ public class testCalculator {
 		System.out.println("Product of array = " + Calculator.getProduct(num));
 		
 		System.out.println((int)num[4] + "! = " + (int)Calculator.getFactorial(num[4]));
+		
+		// Initialize factorial array
+		double[] factArray = Calculator.getFactorial(num);
+		
+		for (double e: factArray) {
+			System.out.print(e + " ");
+		}
 	}
 }
