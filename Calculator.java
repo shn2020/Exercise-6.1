@@ -38,4 +38,12 @@ public class Calculator {
 		}
 		return factorial;
 	}
+	
+	public static double[] getFactorial(double[] num) {
+		double[] n = new double[num.length];
+		for (int i = 0; i < num.length; i++ ) {
+			n[i] = getFactorial(num[i]);
+		}
+		return n;
+	}
 }
